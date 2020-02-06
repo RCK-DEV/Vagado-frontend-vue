@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const QUIZ_API_URL = "http://localhost:8080/";
+const QUIZ_API_URL = "https://vagado-rest-api-backend.herokuapp.com/";
 
 class QuizService {
   retrieveQuiz() {
