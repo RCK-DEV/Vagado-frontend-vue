@@ -5,12 +5,13 @@
       color="primary"
       dark
     >
+    <a href="/">
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="./assets/logo-small.png"
           transition="scale-transition"
           width="40"
         />
@@ -19,11 +20,12 @@
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
           contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+          min-width="150"
+          src="./assets/logo.png"
+          width="150"
         />
       </div>
+      </a>
 
       <v-spacer></v-spacer>
 
@@ -38,21 +40,16 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <router-view/>
     </v-content>
+    
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
   data: () => ({
     //
   }),

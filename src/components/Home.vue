@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 import QuizService from '../service/QuizService';
 export default {
-  name: 'HelloWorld',
+  name: 'QuizService',
   props: {
     msg: String
   }, methods: {
